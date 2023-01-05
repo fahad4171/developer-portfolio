@@ -132,3 +132,13 @@ main {
     color: #474747;
 
 }
+
+/*------What I do Styles--------*/
+
+.what-i-do {
+    margin-top: 130px;
+    background: #e2722131;
+    padding: 130px 150px;
+    border-radius: 10px;
+    text-align: center;
+}
