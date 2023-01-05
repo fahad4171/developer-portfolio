@@ -1,0 +1,134 @@
+/*this universal section, every modification happens here, affect on everywhere in the page. */
+*{
+    margin: 0; /*always put margin 0 to reset any margin */
+
+    /* instead of write font-family information in CSS, we can also copy link from google font and add it to <Head> section*/
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-primary {
+    color: #FD6E0A;
+}
+
+.btn-primary {
+    height: 64px;
+    border-radius: 5px;
+    background: #FD6E0A;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 18px 35px;
+    border: 0;
+}
+
+/*-----HEADER-----*/
+
+nav {
+    /* we use display-flex to get it in the same line, so this will arrange everything inside the <nav> in same line */
+    display: flex;
+    justify-content: space-between; /* to all seperate main tags in <nav>. In this case its <ul> and <h2>*/
+    margin: 50px 200px;
+}
+
+nav ul{ 
+
+    display: flex; /* to arrange ul element(list) in same line */
+    align-items: center; /* to align the list items*/
+    
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.header {
+    background: #FFF8F3;
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, left;
+    
+}
+
+/* Banner Styles*/
+.banner {
+    margin: 0px 200px;/* no top margin or 0 as we already given a margin between in <nav>*/
+
+    display: flex; /* to arrange the <div> element side by side */
+
+    align-items: center; /* to align the <div> element to center */
+}
+
+.banner-sub-title {
+    font-weight: 600;
+    font-size: 45px;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 85px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.banner-description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+/*-------Main Section------------*/
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/*------About Me Styles-----*/
+.about-me {
+    margin-top: 130px;
+    background: #e2722131;
+    padding: 130px 150px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.section-description {
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 30px;
+
+}
+
+.about-info-main {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.about-info {
+   
+}
+.info-title {
+    font-size: 20px;
+    color: #757575;
+}
+
+.info-description {
+    font-weight: 700;
+    font-size: 20px;
+    color: #474747;
+
+}
