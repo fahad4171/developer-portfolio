@@ -83,15 +83,20 @@ nav li {
 }
 /*-------Main Section------------*/
 
-main {
+main { 
+    /* to set common rules for all sections*/
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto; /* old system to keep in center */
+}   
+
+section {
+    margin-top: 130px;
 }
 
 /*------About Me Styles-----*/
 .about-me {
     margin-top: 130px;
-    background: #e2722131;
+    background: #f0e4e4;
     padding: 130px 150px;
     border-radius: 10px;
     text-align: center;
@@ -101,26 +106,27 @@ main {
 .section-title{
     font-weight: 700;
     font-size: 35px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .section-description {
     font-weight: 400;
     font-size: 18px;
     color: #757575;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    text-align: center;
 
 }
+/*------info table-----*/
 
-.about-info-main {
+.about-table { 
+    /* for this section we can use table or flex*/
     display: flex;
     justify-content: space-around;
     
 }
-
-.about-info {
-   
-}
+ 
 .info-title {
     font-size: 20px;
     color: #757575;
@@ -135,10 +141,110 @@ main {
 
 /*------What I do Styles--------*/
 
-.what-i-do {
-    margin-top: 130px;
-    background: #e2722131;
-    padding: 130px 150px;
-    border-radius: 10px;
+
+
+.skills-container {
+    display: flex;
+}
+
+
+
+.skill-title {
+    font-style: bold;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.skill-description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    line-height: 28px;
+    
+}
+.skill {
+    background: #f0e4e4;
+    box-shadow: 0px 6px 50px rgba(7, 2, 2, 0.123);
+    border-radius: 5px;
+    margin-right: 24px;
+    padding: 33px;
+}
+
+/*--------Resume Styles-------*/
+
+.resume-content {
+    display: flex;
+    gap: 24px;
+}
+
+.resume-item {
+    
+    
+}
+
+.resume-title {
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #474747;
+
+}
+
+.degree-name {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+   color: #474747;
+}
+
+.university-name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #757575;
+}
+
+.degree-description {
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    color: #757575;
+}
+
+.resume-button {
     text-align: center;
+    margin-top: 50px;
+}
+
+/*-------Form Styles------*/
+
+
+.form-partition {
+    display: flex;
+    gap: 117px;
+    background: #f0e4e4;
+    padding: 130px 200px;
+}
+
+
+.form-section .section-title{
+    /* to add properties specific class in section, which declared already and used in other section*/
+    text-align: left;  
+}
+
+.left-description {
+    padding-bottom: 30px;
+    color: #474747;
+}
+/*selecting specific type to change its property*/
+.form-section input[type="text"],input[type="email"], textarea {
+    margin-bottom: 24px;
+    width: 100%;    /*to take all space available to cover*/
+    padding: 18px 30px;
+    border: 0;
+    border-radius: 5px;
 }
