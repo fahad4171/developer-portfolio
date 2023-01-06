@@ -27,7 +27,7 @@ nav {
     /* we use display-flex to get it in the same line, so this will arrange everything inside the <nav> in same line */
     display: flex;
     justify-content: space-between; /* to all seperate main tags in <nav>. In this case its <ul> and <h2>*/
-    margin: 50px 200px;
+    padding: 50px 200px;
 }
 
 nav ul{ 
@@ -81,6 +81,7 @@ nav li {
     color: #757575;
     margin-bottom: 30px;
 }
+
 /*-------Main Section------------*/
 
 main { 
